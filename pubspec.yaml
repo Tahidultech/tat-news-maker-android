@@ -1,0 +1,40 @@
+name: news_maker_bd
+description: "News Maker project with Hidden Browser for URL resolving"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.1.0
+  webfeed_revised: ^0.9.0
+  html: ^0.15.4
+  webview_windows: ^0.4.0 
+  intl: ^0.20.2
+  file_picker: ^8.0.0
+  screenshot: ^3.0.0
+  path_provider: ^2.1.5
+  flutter_colorpicker: ^1.1.0
+  image: ^4.1.3
+  webview_flutter: ^4.14.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/system_file/webmeta_extractor.dll
+    - assets/system_file/webmeta_extractor_2.dll
+  fonts:
+    - family: SolaimanLipi
+      fonts:
+        - asset: assets/fonts/solaimanLipi.ttf
+        - asset: assets/fonts/solaimanLipi_Bold.ttf
+          weight: 700
