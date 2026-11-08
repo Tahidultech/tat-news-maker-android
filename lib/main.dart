@@ -4,7 +4,6 @@ import 'package:http/http.dart' as http;
 import 'package:webfeed_revised/webfeed_revised.dart';
 import 'package:html/parser.dart' as html_parser;
 import 'access_gate.dart';
-home: const AccessGate(child: MainHomeScreen()),
 import 'package:webview_windows/webview_windows.dart' as windows;
 import 'dart:async';
 import 'dart:convert';
@@ -84,7 +83,7 @@ class NewsMakerApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const MainHomeScreen(),
+      home: const AccessGate(child: MainHomeScreen()),
     );
   }
 }
